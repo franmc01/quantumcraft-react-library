@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "outDir": "./",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "rootDir": "./"
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
