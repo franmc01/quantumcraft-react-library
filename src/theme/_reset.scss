@@ -1,0 +1,41 @@
+*,:after,:before {
+  box-sizing: border-box
+}
+
+body {
+  line-height: inherit;
+  margin: 0
+}
+
+hr {
+  border-top-width: 1px;
+  color: inherit;
+  height: 0
+}
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: inherit;
+  font-weight: inherit
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit
+}
+
+b,strong {
+  font-weight: bolder
+}
+
+[role=button],button {
+  cursor: pointer
+}
+
+:disabled {
+  cursor: default
+}

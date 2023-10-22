@@ -1,5 +1,4 @@
 import postcss from 'rollup-plugin-postcss';
-// import scss from 'rollup-plugin-scss';
 
 import {createBuildsForFolder, createConfig} from "./rollup.base.config.mjs";
 

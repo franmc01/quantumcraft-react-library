@@ -1,0 +1,106 @@
+:root {
+    // Main Colors
+    --primary-clr: #007bff;
+    --secondary-clr: #6c757d;
+
+    // Alert Colors
+    --success-clr: #28a745;
+    --info-clr: #17a2b8;
+    --warning-clr: #ffc107;
+    --danger-clr: #dc3545;
+
+    // Background Colors    
+    --primary-bg-clr: #007bff;
+    --secondary-bg-clr: #6c757d;
+    --tertiary-bg-clr: #f8f9fa;
+    --quaternary-bg-clr: #f8f9fa;
+
+    // Other Colors
+    --border-clr: #dee2e6;
+    --placeholder-clr: #6c757d;
+    --text-clr-dark: #212529;
+    --text-clr-light: #f8f9fa;
+    --label-clr: #212529;
+    --focus-clr: #80bdff;
+
+    // Font Sizes
+    --font-size-8: 0.5rem;
+    --font-size-10: 0.625rem;
+    --font-size-12: 0.75rem;
+    --font-size-14: 0.875rem;
+    --font-size-16: 1rem;
+    --font-size-18: 1.125rem;
+    --font-size-20: 1.25rem;
+    --font-size-22: 1.375rem;
+    --font-size-24: 1.5rem;
+    --font-size-26: 1.625rem;
+    --font-size-28: 1.75rem;
+    --font-size-32: 2rem;
+    --font-size-34: 2.125rem;
+    --font-size-36: 2.25rem;
+
+    // Line Height
+    --line-height-base: 1.5;
+    --line-height-8: calc(var(--font-size-8) * var(--line-height-base));
+    --line-height-10: calc(var(--font-size-10) * var(--line-height-base));
+    --line-height-12: calc(var(--font-size-12) * var(--line-height-base));
+    --line-height-14: calc(var(--font-size-14) * var(--line-height-base));
+    --line-height-16: calc(var(--font-size-16) * var(--line-height-base));
+    --line-height-18: calc(var(--font-size-18) * var(--line-height-base));
+    --line-height-20: calc(var(--font-size-20) * var(--line-height-base));
+    --line-height-22: calc(var(--font-size-22) * var(--line-height-base));
+    --line-height-24: calc(var(--font-size-24) * var(--line-height-base));
+    --line-height-26: calc(var(--font-size-26) * var(--line-height-base));
+    --line-height-28: calc(var(--font-size-28) * var(--line-height-base));
+    --line-height-32: calc(var(--font-size-32) * var(--line-height-base));
+    --line-height-34: calc(var(--font-size-34) * var(--line-height-base));
+    --line-height-36: calc(var(--font-size-36) * var(--line-height-base));
+
+    --line-height-paragraph: 2;
+    --line-height-paragraph-8: calc(var(--font-size-8) * var(--line-height-paragraph));
+    --line-height-paragraph-10: calc(var(--font-size-10) * var(--line-height-paragraph));
+    --line-height-paragraph-12: calc(var(--font-size-12) * var(--line-height-paragraph));
+    --line-height-paragraph-14: calc(var(--font-size-14) * var(--line-height-paragraph));
+    --line-height-paragraph-16: calc(var(--font-size-16) * var(--line-height-paragraph));
+    --line-height-paragraph-18: calc(var(--font-size-18) * var(--line-height-paragraph));
+    --line-height-paragraph-20: calc(var(--font-size-20) * var(--line-height-paragraph));
+    --line-height-paragraph-22: calc(var(--font-size-22) * var(--line-height-paragraph));
+    --line-height-paragraph-24: calc(var(--font-size-24) * var(--line-height-paragraph));
+    --line-height-paragraph-26: calc(var(--font-size-26) * var(--line-height-paragraph));
+    --line-height-paragraph-28: calc(var(--font-size-28) * var(--line-height-paragraph));
+    --line-height-paragraph-32: calc(var(--font-size-32) * var(--line-height-paragraph));
+    --line-height-paragraph-34: calc(var(--font-size-34) * var(--line-height-paragraph));
+    --line-height-paragraph-36: calc(var(--font-size-36) * var(--line-height-paragraph));
+
+    // Spacing
+    --spacing-0: 0;
+    --spacing-1: 0.25rem;
+    --spacing-2: 0.5rem;
+    --spacing-3: 0.75rem;
+    --spacing-4: 1rem;
+    --spacing-5: 1.25rem;
+    --spacing-6: 1.5rem;
+    --spacing-7: 1.75rem;
+    --spacing-8: 2rem;
+    --spacing-9: 2.25rem;
+    --spacing-10: 2.5rem;
+    --spacing-11: 2.75rem;
+    --spacing-12: 3rem;
+
+    // Border Radius
+    --border-radius-0: 0;
+    --border-radius-1: 0.125rem;
+    --border-radius-2: 0.25rem;
+    --border-radius-3: 0.5rem;
+    --border-radius-4: 1rem;
+    --border-radius-5: 1.5rem;
+    --border-radius-6: 3rem;
+
+    // Border Width
+    --border-width-0: 0;
+    --border-width-1: .0625rem;
+    --border-width-2: .125rem;
+    --border-width-3: .1875rem;
+    --border-width-4: .25rem;
+
+}

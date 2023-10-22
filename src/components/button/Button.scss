@@ -1,0 +1,13 @@
+.btn {
+  padding: var(--spacing-3) var(--spacing-6);
+
+  &--primary {
+    background-color: var(--primary-clr);
+    border: var(--border-width-0);
+    color: var(--text-clr-light);
+    border-radius: var(--border-radius-3);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-paragraph-16);
+    transition: all 0.3s ease-in-out;
+  }
+}
