@@ -8,7 +8,7 @@ export default {
     },
     plugins: [
         postcss({
-            extract: false, // Extrae a un archivo .css
+            extract: true, // Extrae a un archivo .css
             modules: true, // No uses módulos CSS
             use: ['sass'],  // Utiliza SASS
         }),

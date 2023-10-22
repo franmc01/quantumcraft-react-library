@@ -1,3 +1,4 @@
+import postcss from 'rollup-plugin-postcss';
 import { createConfig, plugins } from './rollup.base.config.mjs';
 
 export default createConfig(
@@ -16,5 +17,11 @@ export default createConfig(
       exports: 'named',
     },
   ],
-  plugins
+  plugins.concat([
+    postcss({
+      extract: false,
+      modules: true,
+      use: ['sass'],
+    }),
+  ])
 );
