@@ -14,25 +14,30 @@
   ],
   "scripts": {
     "clean": "rimraf",
+    
     "prebuild:theme": "yarn clean dist/theme",
     "prebuild:hooks": "yarn clean dist/hooks",
     "prebuild:components": "yarn clean dist/components",
+    "prebuild:utils": "yarn clean dist/utils",
+    "prebuild:main": "yarn clean dist/main",
+
     "build:theme": "npx pnpm prebuild:theme && rollup -c rollup.theme.config.mjs && npx pnpm postbuild:theme",
     "build:hooks": "npx pnpm prebuild:hooks && rollup -c rollup.hooks.config.mjs && npx pnpm postbuild:hooks",
     "build:components": "npx pnpm prebuild:components && rollup -c rollup.components.config.mjs && npx pnpm postbuild:components",
+    "build:utils": "npx pnpm prebuild:utils && rollup -c rollup.utils.config.mjs && npx pnpm postbuild:utils",
     "build:main": "npx pnpm prebuild:main && rollup -c rollup.main.config.mjs",
-    "prebuild:main": "yarn clean dist/main",
-    "build": "yarn build:theme && yarn build:hooks && yarn build:components && yarn build:main",
+    
+    "build": "yarn build:theme && yarn build:hooks && yarn build:components && yarn build:utils && yarn build:main",
+    
     "postbuild:theme": "./lib/scripts/deploy_theme.sh",
     "postbuild:hooks": "node lib/scripts/generatePackageJson.mjs hooks",
     "postbuild:components": "node lib/scripts/generatePackageJson.mjs components",
+    "postbuild:utils": "node lib/scripts/generatePackageJson.mjs utils",
+    
     "generate:package": "node lib/scripts/buildPackageJson.mjs"
   },
   "keywords": [],
   "engineStrict": true,
-  "engines": {
-    "node": "18.x"
-  },
   "author": "Francisco Marin",
   "license": "MIT",
   "peerDependencies": {
