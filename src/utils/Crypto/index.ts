@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-import { hex2b64 } from '../../core/externalLibraries/base64'
-import { RSAKey } from '../../core/externalLibraries/rsa'
-import { encryptMessage, importRsaKey } from '../../core/externalLibraries/rsa-oaep'
-import ConsoleLog from './ConsoleLog'
+import { hex2b64 } from './externalLibraries/base64'
+import { RSAKey } from './externalLibraries/rsa'
+import { encryptMessage, importRsaKey } from './externalLibraries/rsa-oaep'
+import ConsoleLog from '../ConsoleLog'
 
 /**
  * 

@@ -1,6 +1,6 @@
 /* eslint-disable no-plusplus */
 
-import { ConsoleLog } from "../../src/utils"
+import ConsoleLog from "../../ConsoleLog"
 
 
 // from https://developers.google.com/web/updates/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
@@ -73,6 +73,7 @@ export async function decryptMessage(key: CryptoKey, clearText: string): Promise
   const encoded = getEncoded(clearText)
   // The iv must never be reused with a given key.
 
+  // @ts-ignore
   const ciphertext = await window.crypto.subtle.decrypt(
     {
       name: 'RSA-OAEP'
@@ -120,6 +121,7 @@ export function importRsaKey(pem: string): any {
   return key
 }
 
+// @ts-ignore
 (window as any).rsa = {
   decryptMessage,
   encryptMessage,

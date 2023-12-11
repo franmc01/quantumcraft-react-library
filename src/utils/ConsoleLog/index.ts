@@ -1,5 +1,5 @@
 /* eslint no-unused-vars: "off" */
-import Memory from './Memory'
+import Memory from '../Memory'
 
 interface IConsoleLog {
   debug: (tag: string, data: any) => void
@@ -24,6 +24,7 @@ const logger = (
   type: 'debug' | 'error',
   data: any
 ): void => {
+  // @ts-ignore
   const logVariable: any = Memory.get('BECOMEADEBUGGER')
 
   if (logVariable === '7') {

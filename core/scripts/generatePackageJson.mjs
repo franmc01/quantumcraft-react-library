@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 function createPackageJsonForSubdirectories(parentDir) {
     // Asumiendo que 'dist' está en el directorio raíz de tu proyecto.
     const fullPath = join(__dirname, '..', '..', 'dist', parentDir); // Ajusta esta ruta según la estructura de tu proyecto.
-
+    
     readdirSync(fullPath, {withFileTypes: true}).forEach((dirEntry) => {
         if (dirEntry.isDirectory()) {
             const componentDir = join(fullPath, dirEntry.name);

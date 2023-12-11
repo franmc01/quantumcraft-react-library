@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import axios from 'axios'
-import ConsoleLog from './ConsoleLog'
-import Memory from './Memory'
+import ConsoleLog from '../ConsoleLog'
+import Memory from '../Memory'
 
 interface IConfigurations {
   APPID: string
@@ -17,7 +17,7 @@ export const Configurations = async ({
   try {
     let configFromService: any
 
-    const configFromStorage: any = Memory.get(`CONFIGURATIONS_${APPID}`, true) || Memory.get('CONFIGURATIONS', true)
+    const configFromStorage: any = Memory.get(`CONFIGURATIONS_${APPID}`, false) || Memory.get('CONFIGURATIONS', false)
 
     ConsoleLog.debug('CONFIGURATIONS::FROM::STORAGE', configFromStorage)
 

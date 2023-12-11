@@ -21,6 +21,7 @@ export function BigInteger(a?: any,b?: any,c?: any) {
 }
 
 // return new, unset BigInteger
+// @ts-ignore
 function nbi() { return new BigInteger(null); }
 
 // am: Compute w_j += (x*this_i), propagate carries,

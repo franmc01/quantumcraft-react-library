@@ -4,9 +4,9 @@
 import {
   LOCALSTORAGE,
   SESSIONSTORAGE
-} from '../../core/enums'
+} from './enums'
 
-import ConsoleLog from './ConsoleLog'
+import ConsoleLog from '../ConsoleLog'
 
 interface IMemory {
   set: (
@@ -78,6 +78,7 @@ const Memory: IMemory = {
     ) {
       window.sessionStorage.setItem(key, newValue)
     } else {
+      // @ts-ignore
       ConsoleLog.error('STORAGE::SET', `NOT KEY FOUND ${key}`)
     }
   },

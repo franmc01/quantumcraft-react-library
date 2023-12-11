@@ -13,6 +13,7 @@ import {
 } from './rng'
 
 function parseBigInt(str,r) {
+  // @ts-ignore
   return new BigInteger(str,r);
 }
 
@@ -66,6 +67,7 @@ function pkcs1pad2(s,n) {
   }
   ba[--n] = 2;
   ba[--n] = 0;
+  // @ts-ignore
   return new BigInteger(ba);
 }
 

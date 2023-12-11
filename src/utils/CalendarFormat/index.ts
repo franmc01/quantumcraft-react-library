@@ -1,4 +1,4 @@
-import Memory from './Memory'
+import Memory from '../Memory'
 
 export interface InitialBankInfo {
   overrideDateFormat: boolean,
@@ -60,6 +60,7 @@ const calendarFormat: CalendarFormat = (
 ): string => {
   const { overrideDateFormat, defaultLocale } = initialBankInfo
 
+  // @ts-ignore
   const language = Memory.get('LANGUAGE')?.toLowerCase() || 'en'
   const formats = isReactDatepicker ? REACT_DATEPICKER_FORMAT : FORMAT_DATES
 

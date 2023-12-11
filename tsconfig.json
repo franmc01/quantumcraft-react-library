@@ -18,7 +18,7 @@
   },
   "include": [
     "src/**/*"
-, "core/externalLibraries"  ],
+  ],
   "exclude": [
     "node_modules",
     "build",

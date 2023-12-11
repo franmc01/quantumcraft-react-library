@@ -6,10 +6,11 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+import json  from "@rollup/plugin-json";
 
 const isProd = process.env.NODE_ENV === "production";
 
-export const external = ["react", "react-dom"];
+export const external = ["react", "react-dom", "form-data"];
 export const createConfig = (input, output, additionalPlugins = []) => ({
   input,
   output,
@@ -22,6 +23,7 @@ export const plugins = [
   resolve(),
   commonjs(),
   typescript({ tsconfig: "./tsconfig.json", useTsconfigDeclarationDir: true }),
+  json(),
   isProd && terser(),
 ].filter(Boolean);
 
