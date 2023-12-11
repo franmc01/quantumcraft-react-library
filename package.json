@@ -1,5 +1,5 @@
 {
-  "name": "quantumcraft-react-library",
+  "name": "santisco-sdk",
   "version": "1.0.0",
   "description": "Quantumcraft React Library, an project to create a react library with Typescript, Rollup, PostCSS, Sass, and more.",
   "main": "dist/index.cjs.js",
@@ -14,27 +14,22 @@
   ],
   "scripts": {
     "clean": "rimraf",
-    
     "prebuild:theme": "yarn clean dist/theme",
     "prebuild:hooks": "yarn clean dist/hooks",
     "prebuild:components": "yarn clean dist/components",
     "prebuild:utils": "yarn clean dist/utils",
     "prebuild:main": "yarn clean dist/main",
-
     "build:theme": "npx pnpm prebuild:theme && rollup -c rollup.theme.config.mjs && npx pnpm postbuild:theme",
     "build:hooks": "npx pnpm prebuild:hooks && rollup -c rollup.hooks.config.mjs && npx pnpm postbuild:hooks",
     "build:components": "npx pnpm prebuild:components && rollup -c rollup.components.config.mjs && npx pnpm postbuild:components",
     "build:utils": "npx pnpm prebuild:utils && rollup -c rollup.utils.config.mjs && npx pnpm postbuild:utils",
     "build:main": "npx pnpm prebuild:main && rollup -c rollup.main.config.mjs",
-    
     "build": "yarn build:theme && yarn build:hooks && yarn build:components && yarn build:utils && yarn build:main",
-    
-    "postbuild:theme": "./lib/scripts/deploy_theme.sh",
-    "postbuild:hooks": "node lib/scripts/generatePackageJson.mjs hooks",
-    "postbuild:components": "node lib/scripts/generatePackageJson.mjs components",
-    "postbuild:utils": "node lib/scripts/generatePackageJson.mjs utils",
-    
-    "generate:package": "node lib/scripts/buildPackageJson.mjs"
+    "postbuild:theme": "./core/scripts/deploy_theme.sh",
+    "postbuild:hooks": "node core/scripts/generatePackageJson.mjs hooks",
+    "postbuild:components": "node core/scripts/generatePackageJson.mjs components",
+    "postbuild:utils": "node core/scripts/generatePackageJson.mjs utils",
+    "generate:package": "node core/scripts/buildPackageJson.mjs"
   },
   "keywords": [],
   "engineStrict": true,
@@ -70,5 +65,11 @@
     "tsconfig-paths": "^4.2.0",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "html2canvas": "^1.4.1",
+    "ismobilejs": "^1.1.1",
+    "node-jose": "^2.2.0"
   }
 }

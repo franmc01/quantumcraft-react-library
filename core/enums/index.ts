@@ -1,0 +1,7 @@
+import LOCALSTORAGE from './LOCAL'
+import SESSIONSTORAGE from './SESSION'
+
+export {
+  LOCALSTORAGE,
+  SESSIONSTORAGE
+}
